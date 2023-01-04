@@ -2,9 +2,11 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { FormLabel } from 'react-bootstrap';
-import InputGroup from 'react-bootstrap/InputGroup';
-import './Firstpage.css'
+import './Style.css'
 import { Link } from 'react-router-dom';
+import InputGroup from 'react-bootstrap/InputGroup';
+
+
 function Firstpage() {
  
   return (
@@ -12,9 +14,9 @@ function Firstpage() {
    
     <div className='formStyle'>
   
-        <Form className='p-4'>
-        <h5 className='mt-5'>Create Profile</h5>
-      <Form.Group className="mb-3" controlId="jobTitle">
+        <Form className='p-4' >
+        <h3>Create Profile</h3>
+        <Form.Group className="mb-4" controlId="jobTitle">
         
         <Form.Control type="text" placeholder='Job Title'/>
       </Form.Group>
@@ -39,9 +41,9 @@ function Firstpage() {
         <Form.Control as="textarea" aria-label="With textarea" />
       </InputGroup>
      
-      <Link to={'/createprofile'}>
+      <Link to={'/createprofile'} style={{textDecoration: 'none'}}>
         <div className="d-grid gap-2">
-          <Button variant="warning"  size='lg' type="submit">
+          <Button  variant="warning"  size='lg' type="submit">
             Continue
           </Button>
         </div>

@@ -1,0 +1,21 @@
+.formStyle{
+  display: flex;
+  justify-content: center;
+}
+.mb-4{
+  font-size: larger;
+  padding: 5px;
+  margin: 2px;
+  width: 500px;
+  
+  }
+  span{
+    display: flex;
+    
+  }
+  Card{
+    text-align: center;
+  }
+  p{
+    color: orange;
+  }
